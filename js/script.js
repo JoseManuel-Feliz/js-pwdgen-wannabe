@@ -15,12 +15,15 @@ console.log('js ok')
 4. Chiedere il colore preferito all'utente.
     4a. Verificare che sia stato raccolto ed inserito correttamente in console.
 
-5. Inserire elemento per fortificare la password
+5. Inserimento elemento per fortificare la password.
     5b. Verificare che sia stato inserito correttamente in console.
 
+6. Unificazione dei dati per generazione password.
+    6b. Verificare  che siano stati inseriti correttamente in console.
+ 
 
-6. Inserire i dati raccolti all'interno dell'elemento con id:password.
-6b. Verificare inserito correttamente in console e nel DOM.
+7. Inserire i dati raccolti all'interno dell'elemento con id:password.
+    7b. Verificare inserito correttamente in console e nel DOM.
 
 */
 
@@ -34,7 +37,7 @@ console.log(password)
 /* Raccolta dati */
 
 // 2. Chiedere il nome all'utente.
-const nome = prompt('Qual è il tuo nome?', 'Jose');
+const nome = prompt('Qual è il tuo nome?', 'Josè');
 //2a. Verificare che sia stato raccolto ed inserito correttamente in console.
 console.log(nome, typeof nome)
 
@@ -52,4 +55,11 @@ console.log(colore, typeof colore)
 const strongpass = 21
 //5b. Verificare inserito correttamente in console.
 console.log(strongpass, typeof strongpass)
+
+/* Fase elaborazione dati */
+
+// 6. Unificazione dei dati per generazione password
+const genpassword = nome + cognome + colore + strongpass
+//6b. Verificare  che siano stati inserito correttamente in console.
+console.log(genpassword)
 
