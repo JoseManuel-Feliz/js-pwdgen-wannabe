@@ -16,3 +16,8 @@ console.log('js ok')
 
 5. Inserire i dati raccolti all'interno dell'elemento con id:password.
 */
+
+/* Fase Preparatoria */
+
+//  1. Recuperare l'elemento con id:password all'interno del DOM.
+const passwordElement = document.getElementById('password')
